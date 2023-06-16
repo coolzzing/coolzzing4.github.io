@@ -1,6 +1,6 @@
 name: SIHYEON PARK
 
-frame_padding: 10px
+frame_padding: 0px
 
 column: 3
 column_gap: 30px
