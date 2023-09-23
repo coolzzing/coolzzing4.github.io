@@ -1,46 +1,78 @@
----
----
-<!DOCTYPE HTML>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{{ site.name }}</title>
-    <style>
-      :root {
-        --column: {{ site.column }};
-        --column-gap: {{ site.column_gap }};
-        --row-gap: {{ site.row_gap }};
-        --frame-padding: {{ site.frame_padding }};
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Sihyeon Park</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link href='https://fonts.googleapis.com/css?family=Roboto+Mono:400,300' rel='stylesheet' type='text/css'><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="./style.css">
 
-        --column-small: {{ site.small_screen.column }};
-        --column-gap-small: {{ site.small_screen.column_gap }};
-        --row-gap-smal: {{ site.small_screen.row_gap }};
-      }
-    </style>
-    <link rel="stylesheet" href="{{ "/assets/style.css" | prepend: site.baseurl }}">
-    <SCRIPT TYPE="text/javascript"> 
-      //Disable right click script 
-      //visit http://www.rainbow.arch.scriptmania.com/scripts/ 
-      var message="Sorry, right-click has been disabled"; 
-      /////////////////////////////////// 
-      function clickIE() {if (document.all) {(message);return false;}} 
-      function clickNS(e) {if 
-        (document.layers||(document.getElementById&&!document.all)) { 
-        if (e.which==2||e.which==3) {(message);return false;}}} 
-      if (document.layers) {document.captureEvents(Event.MOUSEDOWN);document.onmousedown=clickNS;} 
-      else {document.onmouseup=clickNS;document.oncontextmenu=clickIE;} 
-      document.oncontextmenu=new Function("return false") 
-    </SCRIPT> 
-  </head>
-  <body>
-    {%- include header.html -%}
-    <div class="gallary">
-      <h1>{{ site.name }}</h1>
-      {%- assign albums = site.data.config -%}
-      {%- include album.html -%}
-    </div>
-    {%- include footer.html -%}
-    {%- include swipe.html -%}
-  </body>
+</head>
+<body>
+  <section id="about">
+      <h2>About Me
+      <a href="https://instagram.com/artist_sihyeonpark?igshid=NTc4MTIwNjQ2YQ==" target="_blank">
+          <img src="images/instagram-logo.png" alt="Instagram Logo">
+      </a>
+      </h2>
+      <p>I am Sihyeon Park who married with Homin Kwon, Mom of two girls - Sarah and Lorah.
+      </p>
+  </section>
+  <section id="gallery">
+    <h2>Gallery</h2>
+		<!-- partial:index.partial.html -->
+		<div class="m-p-g">
+			<div class="m-p-g__thumbs" data-google-image-layout data-max-height="350">
+				<img src="images/_4 Ladies_ set of 4, 2019 copy.jpg" data-full="images/_4 Ladies_ set of 4, 2019 copy.jpg" class="m-p-g__thumbs-img" />
+				<img src="images/_4ladies-bamboo_ 9.25x7.25_, 2019 copy.jpg" data-full="images/_4ladies-bamboo_ 9.25x7.25_, 2019 copy.jpg" class="m-p-g__thumbs-img" />
+				<img src="images/_4ladies-chrysanthemum_ 9.25x7.25_, 2019 copy.jpg" data-full="images/_4ladies-chrysanthemum_ 9.25x7.25_, 2019 copy.jpg" class="m-p-g__thumbs-img" />
+				<img src="images/_4ladies-orchid_ 9.25x7.25_, 2019 copy.jpg" data-full="images/_4ladies-orchid_ 9.25x7.25_, 2019 copy.jpg" class="m-p-g__thumbs-img" />
+				<img src="images/_4ladies-plum_ 9.25x7.25_, 2019 copy.jpg" data-full="images/_4ladies-plum_ 9.25x7.25_, 2019 copy.jpg" class="m-p-g__thumbs-img" />
+				<img src="images/_Buttercorn-Red_ 20x12_, 2020 copy.jpg" data-full="images/_Buttercorn-Red_ 20x12_, 2020 copy.jpg" class="m-p-g__thumbs-img" />
+				<img src="images/_Buttercorn-Yellow_ 20x12_, 2020 copy.jpg" data-full="images/_Buttercorn-Yellow_ 20x12_, 2020 copy.jpg" class="m-p-g__thumbs-img" />
+				<img src="images/_Chaekgeori-CA-1_ 24x18_, 2023 copy.jpg" data-full="images/_Chaekgeori-CA-1_ 24x18_, 2023 copy.jpg" class="m-p-g__thumbs-img" />
+				<img src="images/_Chochungdo-4_ set of 4, 2019 copy.jpg" data-full="images/_Chochungdo-4_ set of 4, 2019 copy.jpg" class="m-p-g__thumbs-img" />
+				<img src="images/_Chochungdo-CA_ 20x20_, 2021 copy.jpg" data-full="images/_Chochungdo-CA_ 20x20_, 2021 copy.jpg" class="m-p-g__thumbs-img" />
+				<img src="images/_Hwajeopdo-night_ 36x12_, 2019 copy.jpg" data-full="images/_Hwajeopdo-night_ 36x12_, 2019 copy.jpg" class="m-p-g__thumbs-img" />
+				<img src="images/_Hwajodo-white doves_, 2018.jpeg copy.jpg" data-full="images/_Hwajodo-white doves_, 2018.jpeg copy.jpg" class="m-p-g__thumbs-img" />
+				<img src="images/_Ilwolobongdo-AZ-2_ 24x20_, 2022 copy.jpg" data-full="images/_Ilwolobongdo-AZ-2_ 24x20_, 2022 copy.jpg" class="m-p-g__thumbs-img" />
+				<img src="images/_Ilwolobongdo-AZ_ 24x20_, 2021 copy.jpg" data-full="images/_Ilwolobongdo-AZ_ 24x20_, 2021 copy.jpg" class="m-p-g__thumbs-img" />
+				<img src="images/_Ilwolobongdo-CA-2_ 24x36_, 2023 copy.jpg" data-full="images/_Ilwolobongdo-CA-2_ 24x36_, 2023 copy.jpg" class="m-p-g__thumbs-img" />
+				<img src="images/_Ilwolobongdo-CA_ 24x20_, 2021 copy.jpg" data-full="images/_Ilwolobongdo-CA_ 24x20_, 2021 copy.jpg" class="m-p-g__thumbs-img" />
+				<img src="images/_Ilwolobongdo_, 24x48_, 2018 copy.jpg" data-full="images/_Ilwolobongdo_, 24x48_, 2018 copy.jpg" class="m-p-g__thumbs-img" />
+				<img src="images/_Lucky Bag_ 11.8x11.8_, 2021 copy.jpg" data-full="images/_Lucky Bag_ 11.8x11.8_, 2021 copy.jpg" class="m-p-g__thumbs-img" />
+				<img src="images/_Morando-blue-left_ 24ㅌ12_, 2021 copy.jpg" data-full="images/_Morando-blue-left_ 24ㅌ12_, 2021 copy.jpg" class="m-p-g__thumbs-img" />
+				<img src="images/_Morando-blue-right_ 23ㅌ12_, 2021 copy.jpg" data-full="images/_Morando-blue-right_ 23ㅌ12_, 2021 copy.jpg" class="m-p-g__thumbs-img" />
+				<img src="images/_Poppy in a moon_ 24x24_, 2023 copy.jpg" data-full="images/_Poppy in a moon_ 24x24_, 2023 copy.jpg" class="m-p-g__thumbs-img" />
+				<img src="images/_Sogwado-CA-2_ 24x20_, 2022 copy.png" data-full="images/_Sogwado-CA-2_ 24x20_, 2022 copy.png" class="m-p-g__thumbs-img" />
+				<img src="images/_Sogwado-CA_ 20x20_, 2021 copy.jpg" data-full="images/_Sogwado-CA_ 20x20_, 2021 copy.jpg" class="m-p-g__thumbs-img" />
+				<img src="images/_Sun and Cactus-1_ 24x12_, 2022 copy.jpg" data-full="images/_Sun and Cactus-1_ 24x12_, 2022 copy.jpg" class="m-p-g__thumbs-img" />
+				<img src="images/_Sun, Moon and Cactus-1_ 24x36_, 2022 copy.jpg" data-full="images/_Sun, Moon and Cactus-1_ 24x36_, 2022 copy.jpg" class="m-p-g__thumbs-img" />
+				<img src="images/_Sun, Moon and Cactus-2_ 24x20_, 2022 copy.jpg" data-full="images/_Sun, Moon and Cactus-2_ 24x20_, 2022 copy.jpg" class="m-p-g__thumbs-img" />
+				<img src="images/_Sun, Moon and Cactus-3_ 12x36_, 2022 copy.jpg" data-full="images/_Sun, Moon and Cactus-3_ 12x36_, 2022 copy.jpg" class="m-p-g__thumbs-img" />
+				<img src="images/_Sun, Moon and Cactus-4_ 16x20_, 2022 copy.jpg" data-full="images/_Sun, Moon and Cactus-4_ 16x20_, 2022 copy.jpg" class="m-p-g__thumbs-img" />
+				<img src="images/_Sun, Moon and Cactus-5_ 16x20_, 2022 copy.jpg" data-full="images/_Sun, Moon and Cactus-5_ 16x20_, 2022 copy.jpg" class="m-p-g__thumbs-img" />
+				<img src="images/_Sun, Moon and Cactus-6_ 12x24_-2022 copy.jpg" data-full="images/_Sun, Moon and Cactus-6_ 12x24_-2022 copy.jpg" class="m-p-g__thumbs-img" />
+				<img src="images/_Sun, Moon and Palm Tree -1_ 24x20_, 2022 copy.jpg" data-full="images/_Sun, Moon and Palm Tree -1_ 24x20_, 2022 copy.jpg" class="m-p-g__thumbs-img" />
+				<img src="images/_Unicorn-sansu_ 36x24_, 2020 copy.jpg" data-full="images/_Unicorn-sansu_ 36x24_, 2020 copy.jpg" class="m-p-g__thumbs-img" />
+				<img src="images/_Vase-3-1_ 24x12_, 2021 copy.jpg" data-full="images/_Vase-3-1_ 24x12_, 2021 copy.jpg" class="m-p-g__thumbs-img" />
+				<img src="images/_Vase-3-2_ 24x12_, 2021 copy.jpg" data-full="images/_Vase-3-2_ 24x12_, 2021 copy.jpg" class="m-p-g__thumbs-img" />
+				<img src="images/_Vase-3-3_ 24x12_, 2021 copy.jpg" data-full="images/_Vase-3-3_ 24x12_, 2021 copy.jpg" class="m-p-g__thumbs-img" />
+
+			</div>
+
+			<div class="m-p-g__fullscreen"></div>
+		</div>
+
+		<script>
+			var elem = document.querySelector('.m-p-g');
+
+			document.addEventListener('DOMContentLoaded', function() {
+				var gallery = new MaterialPhotoGallery(elem);
+			});
+		</script>
+		<!-- partial -->
+  </section>
+  <script src="script.js"></script>
+</body>
 </html>
